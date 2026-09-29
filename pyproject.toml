@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-report"
+version = "0.1.0"
+description = "Summarise job execution records from JSON"
+requires-python = ">=3.10"
+
+[project.scripts]
+job-report = "job_report.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
